@@ -32,4 +32,18 @@ describe Solver do
       expect(@solver.reverse('')).to eq ''
     end
   end
+
+  context 'testing fizzbuzz method' do
+    it 'should return fizz if the argument is divisible by 3' do
+      expect(@solver.fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it 'should return buzz if the argument is divisible by 5' do
+      expect(@solver.fizzbuzz(5)).to eq 'buzz'
+    end
+
+    it 'should return fizzbuzz if the argument is divisible by 3 and 5' do
+      expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+  end
 end
