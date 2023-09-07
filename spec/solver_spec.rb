@@ -28,7 +28,7 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq 'olleh'
     end
 
-    it 'should return an empty string if the argument is empty' do  
+    it 'should return an empty string if the argument is empty' do
       expect(@solver.reverse('')).to eq ''
     end
   end
